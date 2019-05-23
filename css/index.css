@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #FFFFE0;
+}
+.container {
+    transform-style: preserve-3d;
+    transition: all 3s;
+    position: relative;
+    transform: rotateY(0deg)
+}
+
+.container>li {
+    list-style: none;
+}
+
+.resume {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../imags/img4.jpg')  no-repeat;
+    background-size:cover;
+    transform: translateZ(960px);
+    opacity: 0.8;
+
+}
+
+.content {
+    width: 100%; 
+    height: 100%;
+    background: url('../imags/img1.jpg')  no-repeat;
+    background-size:cover;
+    position: absolute;
+    transform: rotateY(90deg) translateZ(960px);
+    opacity:0.8;
+
+}
+
+.user-heard-wrap{
+width: 360px;
+height: 65px;
+border: 5px solid 	#BF3EFF;
+border-radius: 20px;
+background:#AEEEEE;
+position: fixed;
+top: 50px;
+left: 80px;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-shrink: 0;
+
+}
+
+.heard-img{
+    display: block;
+    width:65px;
+    height: 65px;
+    margin-left:15px;
+}
+.heard-img>img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.user-name{
+    height: 50px;
+    width: 110px;
+    line-height: 50px;
+
+    display: block;
+    text-align: center;
+    font-size:30px;
+    background: black;
+    color: #ffff;
+    border-radius: 10px;
+    margin-left: 20px;
+   
+    
+}
+
+.user-resume{
+    display: block;
+    font-size:35px;
+    height: 60px;
+    line-height: 50px;
+    margin-left: 10px;
+    border-radius: 10%;
+}
+
+.resume-name-wrap{
+    width:650px;
+    height: 320px;
+    background:#AEEEEE;
+    border-radius: 20px;   
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: -160px;
+    transition: all 2s;
+
+}
+.user-english-name{
+    font-size:50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.user-life{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.user-chinese-name{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+.user-profession{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.year{
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
+
+.resume-name-wrap:hover{
+  transform: rotateY(30deg);
+ 
+}
